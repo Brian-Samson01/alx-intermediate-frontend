@@ -1,0 +1,24 @@
+{
+  "name": "frontend_pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-Samson01/alx-intermediate-frontend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Brian-Samson01/alx-intermediate-frontend/issues"
+  },
+  "homepage": "https://github.com/Brian-Samson01/alx-intermediate-frontend#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
+  }
+}
