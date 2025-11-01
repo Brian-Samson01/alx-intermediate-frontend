@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom responsiveness for main grid -->
+  <style>
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body class="p-4">
+  <!-- Header -->
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl font-bold text-center">Grid, Flexbox & Image Gallery</h1>
+  </header>
+
+  <!-- Main layout using Grid and Flexbox -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <!-- Flex section -->
+    <section class="lg:col-span-2 flex justify-between">
+      <div class="bg-red-200 p-4 w-1/2 m-2 text-center rounded shadow">
+        Flexbox Item 1
+      </div>
+      <div class="bg-red-400 p-4 w-1/2 m-2 text-center rounded shadow">
+        Flexbox Item 2
+      </div>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="bg-green-200 p-4 text-center rounded shadow">
+      Sidebar
+    </aside>
+  </main>
+
+  <!-- 🖼️ Image Gallery Section -->
+  <section class="mt-8">
+    <h2 class="text-2xl font-semibold mb-4 text-center text-gray-800">
+      Responsive Image Gallery
+    </h2>
+
+    <!-- Gallery Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <img src="https://source.unsplash.com/random/800x600?nature,1" alt="Gallery Image 1" class="w-full h-64 object-cover rounded-lg shadow">
+      <img src="https://source.unsplash.com/random/800x600?nature,2" alt="Gallery Image 2" class="w-full h-64 object-cover rounded-lg shadow">
+      <img src="https://source.unsplash.com/random/800x600?nature,3" alt="Gallery Image 3" class="w-full h-64 object-cover rounded-lg shadow">
+      <img src="https://source.unsplash.com/random/800x600?nature,4" alt="Gallery Image 4" class="w-full h-64 object-cover rounded-lg shadow">
+      <img src="https://source.unsplash.com/random/800x600?nature,5" alt="Gallery Image 5" class="w-full h-64 object-cover rounded-lg shadow">
+      <img src="https://source.unsplash.com/random/800x600?nature,6" alt="Gallery Image 6" class="w-full h-64 object-cover rounded-lg shadow">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-4 mt-8 text-center rounded">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+</body>
+</html>
