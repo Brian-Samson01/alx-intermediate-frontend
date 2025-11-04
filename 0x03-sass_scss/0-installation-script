@@ -1,0 +1,17 @@
+# Steps to install SASS on Windows
+
+1. Opened Command Prompt and navigated to the project folder:
+   cd path\to\alx-intermediate-frontend
+   mkdir 0x03-sass_scss
+   cd 0x03-sass_scss
+
+2. Checked Node.js installation:
+   node -v
+   npm -v
+   (Installed Node.js v20.16.0 from https://nodejs.org/en/download if not found)
+
+3. Installed SASS using npm:
+   npm install sass -v 3.7.4
+
+4. Verified SASS installation:
+   npx sass --version
